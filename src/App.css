@@ -1,0 +1,236 @@
+/* General Styling */
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+.App-header {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.location-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.location-icon {
+  font-size: 20px;
+}
+
+.location-bar input {
+  border: none;
+  background: none;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.search-bar {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Carousel */
+.carousel .control-arrow {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 10px;
+}
+
+.carousel .control-next.control-arrow {
+  right: 10px;
+}
+
+.carousel img {
+  max-height: 250px;
+  width: auto;
+  object-fit: cover;
+}
+
+.carousel .control-arrow:hover {
+  color: #007bff;
+}
+
+.carousel .slider-wrapper {
+  overflow: hidden;
+}
+
+.carousel .slider {
+  display: flex;
+  gap: 10px; /* Space between slides */
+  transition: transform 0.6s ease;
+}
+
+.carousel .slider .slide {
+  flex: 0 0 auto; /* Ensure cards don’t shrink */
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.category {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 18%;
+  text-align: center;
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Sections */
+.section {
+  margin: 20px 0;
+}
+
+.photographer-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.photographer-card {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px; /* Fixed width for consistency */
+  margin: 0 10px; /* Reduced margin for less space between cards */
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.photographer-card img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.photographer-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonial {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+
+.footer-logo {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 5px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #eee;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .photographer-card {
+    width: 90%;
+    margin: 0 0 10px; /* Adjusted margin for mobile */
+  }
+}
